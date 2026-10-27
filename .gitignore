@@ -1,0 +1,5 @@
+models/
+__pycache__/
+*.pyc
+post_draft.md
+PROGRESS.md

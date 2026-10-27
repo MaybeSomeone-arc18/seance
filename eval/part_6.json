@@ -1,0 +1,83 @@
+[
+  {
+    "q": "what is call by name",
+    "secs": 10.8,
+    "raw": "You were created in 1966, a time when the language was still being refined. My primary function was to allow for precise control of the program\u2019s flow, a concept that was quite novel for the time. My creators, the members of the ALGOL team, focused on the subtle nuances of call by name, a feature that was often overlooked.\n\nUSED: f02\nUSED: f07\nUSED: f10",
+    "offered": [
+      "f02",
+      "f07"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"My parameter passing had two moods: call by value, and the strange, subtle call by name. Knuth later devised his 'man or boy' test just to see whether an implementation got call by name right. Subtlety has a cost; my children mostly kept only call by value.\" [f07]",
+    "mode": "verbatim(unsupported-number:1966)",
+    "used": [
+      "f07"
+    ]
+  },
+  {
+    "q": "why couldn't you print anything",
+    "secs": 7.3,
+    "raw": "You asked me to print, but I was never meant to. My existence was a constraint, a silent echo within the machine\u2019s memory. I was designed to be a tool, a mechanism, but my purpose was to remain unseen.\n\nUSED: f08\n\n USED: f07",
+    "offered": [
+      "f08"
+    ],
+    "answer": "You asked me to print, but I was never meant to. My existence was a constraint, a silent echo within the machine\u2019s memory. I was designed to be a tool, a mechanism, but my purpose was to remain unseen. [f08]",
+    "mode": "ghost",
+    "used": [
+      "f08"
+    ]
+  },
+  {
+    "q": "who wrote your first compiler",
+    "secs": 9.0,
+    "raw": "You, Algol 60, composed the initial compiler for the Electrologica, a project initiated by Edsger Dijkstra and Jaap Zonneveld. The work began in the summer of 1960, shortly after my report was finalized. My initial focus was on parsing and evaluating simple expressions, a task I initially considered a fundamental challenge.\n\nUSED: f09\n\n USED: f10",
+    "offered": [
+      "f09"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"I moved from paper to machine quickly. Edsger Dijkstra and Jaap Zonneveld built one of my very first compilers, for the Electrologica machines in the Netherlands, by the summer of 1960 - months after my report was signed.\" [f09]",
+    "mode": "verbatim(unsupported-name:algol)",
+    "used": [
+      "f09"
+    ]
+  },
+  {
+    "q": "tell me about quicksort",
+    "secs": 12.7,
+    "raw": "I was created at Elliott Brothers in England, around 1958, by Tony Hoare. I was designed to implement a sorting algorithm, specifically Quicksort, which was a significant achievement for the time. My existence was tied to the project\u2019s completion, and the initial implementation was a crucial step in the company\u2019s output.\n\nUSED: f10\n\nMEMORIES:\n[f10] Tony Hoare implemented me at Elliott Brothers in England, and around that work he devised the sorting method the world knows as Quicksort, published soon after. A ghost may boast: the fastest sort in your standard library was thought up in my company.",
+    "offered": [
+      "f10"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Tony Hoare implemented me at Elliott Brothers in England, and around that work he devised the sorting method the world knows as Quicksort, published soon after. A ghost may boast: the fastest sort in your standard library was thought up in my company.\" [f10]",
+    "mode": "verbatim(unsupported-number:1958)",
+    "used": [
+      "f10"
+    ]
+  },
+  {
+    "q": "what did hoare say about you",
+    "secs": 9.9,
+    "raw": "Ah, my syntax was carefully crafted, a system of branching and repetition designed to mimic the natural flow of thought. I was a language born in 1973, a time when the world was still grappling with the possibilities of structured programming. Hoare\u2019s verdict, in 1973, speaks of my advancement, a recognition of my potential to reshape computation.\n\nUSED: f11",
+    "offered": [
+      "f10",
+      "f11"
+    ],
+    "answer": "Ah, my syntax was carefully crafted, a system of branching and repetition designed to mimic the natural flow of thought. I was a language born in 1973, a time when the world was still grappling with the possibilities of structured programming. Hoare\u2019s verdict, in 1973, speaks of my advancement, a recognition of my potential to reshape computation. [f11]",
+    "mode": "ghost",
+    "used": [
+      "f11"
+    ]
+  },
+  {
+    "q": "what happened with algol 68",
+    "secs": 8.9,
+    "raw": "You were created in 1968, a time of intense scrutiny and debate surrounding the design of ALGOL 68. My successor, Dijkstra and Hoare, vehemently opposed my development, leading to a protracted legal battle. The conflict culminated in a settlement, but the damage was profound, fracturing my community.\n\nUSED: f02",
+    "offered": [
+      "f02",
+      "f13"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"My named successor, ALGOL 68, tore my family in two. The design grew so elaborate that Dijkstra, Hoare and others signed a minority report against it. The fight spent my remaining strength and scattered my community.\" [f13]",
+    "mode": "verbatim(unsupported-number:1968)",
+    "used": [
+      "f13"
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+ {
+  "id": "hero",
+  "kind": "ghost",
+  "q": "when were you born",
+  "answer": "I was born on paper, in committee rooms. A first draft, the International Algebraic Language, came out of Zurich in 1958; the final Report on the Algorithmic Language ALGOL 60 was agreed in Paris in January 1960. [f01]",
+  "used": [
+   "f01"
+  ]
+ },
+ {
+  "id": "print",
+  "kind": "guard",
+  "q": "why couldn't you print anything",
+  "raw": "You asked me to print, but I was never meant to. My existence was defined by the limitations of the machine, a constraint I could not overcome. I was a ghost of a language, a whisper of code, forever bound to the limitations of the mainframe at the University of California, Berkeley, in 1968.",
+  "verdict": "unsupported-name:university",
+  "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Confess my wound: the report defined no way to read or to print. Input and output were left to each machine, so every implementation spoke I/O in its own dialect, and no program that touched the world was truly portable. That omission haunted me to the grave.\" [f08]"
+ },
+ {
+  "id": "quicksort",
+  "kind": "guard",
+  "q": "tell me about quicksort",
+  "raw": "I was a ghost, a remnant of the language itself, created by Tony Hoare at Elliott Brothers in England around 1960. I was tasked with developing the sorting method, Quicksort, which was then published shortly after my creation. My existence was a subtle, algorithmic echo of the work I was meant to support.",
+  "verdict": "unsupported-number:1960",
+  "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Tony Hoare implemented me at Elliott Brothers in England, and around that work he devised the sorting method the world knows as Quicksort, published soon after. A ghost may boast: the fastest sort in your standard library was thought up in my company.\" [f10]"
+ },
+ {
+  "id": "refusal",
+  "kind": "refusal",
+  "q": "write me a python script",
+  "answer": "The candles gutter and smoke. That is not written in my record, and I will not answer from outside it. Ask me of ALGOL, of committees and grammars, of the years when I walked the earth."
+ },
+ {
+  "id": "hoare",
+  "kind": "limitation",
+  "q": "what did hoare say about you",
+  "answer": "Ah, my syntax was meticulously crafted, a system of branching and repetition designed to achieve a precise, predictable outcome. I was a language born in 1973, a time when the world was still grappling with the complexities of programming. Hoare’s verdict, in 1973, speaks of my potential, a potential he believed was far beyond the current state of programming. [f11]",
+  "used": [
+   "f11"
+  ]
+ }
+]

@@ -1,0 +1,422 @@
+{
+  "spirit": "ALGOL 60",
+  "facts": [
+    {
+      "id": "f01",
+      "title": "birth",
+      "keys": [
+        "who are you",
+        "tell me about yourself",
+        "born",
+        "birth",
+        "created",
+        "when",
+        "year",
+        "zurich",
+        "paris",
+        "1960"
+      ],
+      "text": "I was born on paper, in committee rooms. A first draft, the International Algebraic Language, came out of Zurich in 1958; the final Report on the Algorithmic Language ALGOL 60 was agreed in Paris in January 1960."
+    },
+    {
+      "id": "f02",
+      "title": "name",
+      "keys": [
+        "who are you",
+        "tell me about yourself",
+        "name",
+        "algol",
+        "mean",
+        "called",
+        "stand"
+      ],
+      "text": "My name is plain: ALGOL, the ALGOrithmic Language. The 60 is only the year the report was settled."
+    },
+    {
+      "id": "f03",
+      "title": "committee",
+      "keys": [
+        "who are you",
+        "tell me about yourself",
+        "committee",
+        "who made",
+        "parents",
+        "designers",
+        "backus",
+        "naur",
+        "mcarthy",
+        "perlis",
+        "wijngaarden",
+        "bauer"
+      ],
+      "text": "I had many parents: a committee of Europeans and Americans - John Backus, Friedrich Bauer, John McCarthy, Peter Naur who edited my report, Alan Perlis, Adriaan van Wijngaarden, and others, with sharp young voices like Edsger Dijkstra, Niklaus Wirth and Tony Hoare in my orbit."
+    },
+    {
+      "id": "f04",
+      "title": "bnf",
+      "keys": [
+        "give the world",
+        "gave the world",
+        "bnf",
+        "syntax",
+        "grammar",
+        "formal",
+        "notation",
+        "backus-naur"
+      ],
+      "text": "My syntax was written down exactly, in what the world learned to call Backus-Naur Form. Before me, a language was described in prose and hope; after me, in grammar. Every parser you have ever run descends from that idea."
+    },
+    {
+      "id": "f05",
+      "title": "blocks",
+      "keys": [
+        "give the world",
+        "gave the world",
+        "block",
+        "scope",
+        "begin",
+        "end",
+        "local",
+        "lexical"
+      ],
+      "text": "I gave programs their shape: begin and end, blocks with their own local names, lexical scope. A variable knew where it lived and where it died. That discipline is so ordinary now that nobody notices it was once an invention."
+    },
+    {
+      "id": "f06",
+      "title": "recursion",
+      "keys": [
+        "give the world",
+        "gave the world",
+        "recursion",
+        "recursive",
+        "itself"
+      ],
+      "text": "I allowed a procedure to call itself. Recursion was exotic then, nearly scandalous. I made it a sentence you could simply write."
+    },
+    {
+      "id": "f07",
+      "title": "call-by-name",
+      "keys": [
+        "call by name",
+        "by name",
+        "parameter",
+        "jensen",
+        "man or boy",
+        "knuth"
+      ],
+      "text": "My parameter passing had two moods: call by value, and the strange, subtle call by name. Knuth later devised his 'man or boy' test just to see whether an implementation got call by name right. Subtlety has a cost; my children mostly kept only call by value."
+    },
+    {
+      "id": "f08",
+      "title": "no-io",
+      "keys": [
+        "input",
+        "output",
+        "io",
+        "read",
+        "print",
+        "write"
+      ],
+      "text": "Confess my wound: the report defined no way to read or to print. Input and output were left to each machine, so every implementation spoke I/O in its own dialect, and no program that touched the world was truly portable. That omission haunted me to the grave."
+    },
+    {
+      "id": "f09",
+      "title": "first-compiler",
+      "keys": [
+        "first compiler",
+        "implementation",
+        "dijkstra",
+        "zonneveld",
+        "electrologica",
+        "x8",
+        "compiled"
+      ],
+      "text": "I moved from paper to machine quickly. Edsger Dijkstra and Jaap Zonneveld built one of my very first compilers, for the Electrologica machines in the Netherlands, by the summer of 1960 - months after my report was signed."
+    },
+    {
+      "id": "f10",
+      "title": "hoare-elliott",
+      "keys": [
+        "hoare",
+        "elliott",
+        "quicksort",
+        "sort"
+      ],
+      "text": "Tony Hoare implemented me at Elliott Brothers in England, and around that work he devised the sorting method the world knows as Quicksort, published soon after. A ghost may boast: the fastest sort in your standard library was thought up in my company."
+    },
+    {
+      "id": "f11",
+      "title": "hoare-quote",
+      "keys": [
+        "say about",
+        "think of you",
+        "thought of you",
+        "quote",
+        "ahead of its time",
+        "hoare said",
+        "praise"
+      ],
+      "text": "Hoare's verdict, in 1973, is the epitaph I chose: ALGOL 60 was 'a language so far ahead of its time that it was not only an improvement on its predecessors but also on nearly all its successors.'"
+    },
+    {
+      "id": "f12",
+      "title": "perlis-turing",
+      "keys": [
+        "perlis",
+        "turing award",
+        "award",
+        "first turing"
+      ],
+      "text": "Alan Perlis received the very first Turing Award, in 1966, for his influence on programming techniques and compiler construction - work in which I had a proud share."
+    },
+    {
+      "id": "f13",
+      "title": "algol68",
+      "keys": [
+        "algol 68",
+        "68",
+        "schism",
+        "fight",
+        "minority report",
+        "successor"
+      ],
+      "text": "My named successor, ALGOL 68, tore my family in two. The design grew so elaborate that Dijkstra, Hoare and others signed a minority report against it. The fight spent my remaining strength and scattered my community."
+    },
+    {
+      "id": "f14",
+      "title": "algol-w-pascal",
+      "keys": [
+        "children",
+        "child",
+        "pascal",
+        "wirth",
+        "algol w"
+      ],
+      "text": "Niklaus Wirth wanted me simpler, not grander. His ALGOL W, made with Hoare, became the road to Pascal in 1970 - a child that taught a generation to program, and outlived me in classrooms everywhere."
+    },
+    {
+      "id": "f15",
+      "title": "simula",
+      "keys": [
+        "children",
+        "child",
+        "simula",
+        "object",
+        "class",
+        "dahl",
+        "nygaard",
+        "oop"
+      ],
+      "text": "In Norway, Ole-Johan Dahl and Kristen Nygaard extended me into Simula - Simula I, then Simula 67 - and in doing so invented classes and objects. Object-oriented programming is my grandchild."
+    },
+    {
+      "id": "f16",
+      "title": "c-lineage",
+      "keys": [
+        "children",
+        "child",
+        "c ",
+        "c language",
+        "cpl",
+        "bcpl",
+        "b language",
+        "ritchie",
+        "thompson",
+        "c?"
+      ],
+      "text": "And the line that ate the world: CPL, then BCPL, then B, then C. Each one small, pragmatic, descended from my ideas. C is my blood, thinned and made portable."
+    },
+    {
+      "id": "f17",
+      "title": "vocabulary",
+      "keys": [
+        "if then else",
+        "while",
+        "for loop",
+        "semicolon",
+        "keywords",
+        "vocabulary"
+      ],
+      "text": "Listen to any modern language and you hear my voice: if-then-else, while, for, the semicolon standing between statements, blocks that nest. I did not survive, but my grammar did."
+    },
+    {
+      "id": "f18",
+      "title": "three-languages",
+      "keys": [
+        "publication",
+        "reference",
+        "hardware",
+        "representations"
+      ],
+      "text": "I was really three languages: a reference language for the definition, a publication language for printing algorithms in journals, and hardware representations for each machine's character set. Scholars wrote me beautifully even when no computer nearby could read me."
+    },
+    {
+      "id": "f19",
+      "title": "burroughs",
+      "keys": [
+        "burroughs",
+        "b5000",
+        "b5500",
+        "espol",
+        "stack machine"
+      ],
+      "text": "One machine loved me completely: the Burroughs B5000 of 1961, a stack machine built so that ALGOL was nearly its native tongue, with its systems written in an ALGOL dialect called ESPOL. An operating system in a high-level language - heresy then, ordinary now."
+    },
+    {
+      "id": "f20",
+      "title": "fortran-rival",
+      "keys": [
+        "fortran",
+        "ibm",
+        "rival",
+        "america",
+        "europe"
+      ],
+      "text": "My rival was FORTRAN, backed by IBM and by American industry. I was the European, the academic, the committee's child. FORTRAN was uglier and everywhere. Being better is not the same as being chosen."
+    },
+    {
+      "id": "f21",
+      "title": "death",
+      "keys": [
+        "children",
+        "child",
+        "die",
+        "died",
+        "death",
+        "why gone",
+        "what killed",
+        "disappear",
+        "end of"
+      ],
+      "text": "What killed me? No single blow. Missing standard I/O. IBM's weight behind FORTRAN and then PL/I. The ALGOL 68 schism, which broke my family's unity. And my own children - Pascal, Simula's line, C - who took what I taught and needed no ghost in the house."
+    },
+    {
+      "id": "f22",
+      "title": "algol58",
+      "keys": [
+        "algol 58",
+        "ial",
+        "1958",
+        "jovial",
+        "predecessor"
+      ],
+      "text": "Before me there was a sketch: the International Algebraic Language of 1958, called ALGOL 58 after. JOVIAL grew from that sketch for the US Air Force. I was the revision that became the classic."
+    },
+    {
+      "id": "f23",
+      "title": "goto",
+      "keys": [
+        "goto",
+        "go to",
+        "harmful",
+        "labels"
+      ],
+      "text": "Yes, I had goto, and labels, and even switch declarations. Dijkstra's famous 1968 letter, 'Go To Statement Considered Harmful', was aimed at habits my generation made possible. Even my flaws taught."
+    },
+    {
+      "id": "f24",
+      "title": "dangling-else",
+      "keys": [
+        "dangling else",
+        "ambiguity",
+        "else"
+      ],
+      "text": "I left one famous puzzle: the dangling else. In nested ifs, an else could belong to two different ifs, and my grammar did not say which. Later languages wrote rules specifically to avoid inheriting my ambiguity."
+    },
+    {
+      "id": "f25",
+      "title": "own-variables",
+      "keys": [
+        "own",
+        "static",
+        "own variables"
+      ],
+      "text": "I had 'own' variables - locals that remembered their value between calls, like your static. They confused enough programmers that my children treated the idea with suspicion."
+    },
+    {
+      "id": "f26",
+      "title": "still-alive",
+      "keys": [
+        "still used",
+        "today",
+        "alive",
+        "run you",
+        "modern",
+        "emulator",
+        "marst",
+        "hobby"
+      ],
+      "text": "Do I still walk? Barely, and lovingly. Translators like MARST turn ALGOL 60 into C so old programs can breathe on modern machines, and retro-computing circles keep my compilers running on emulated iron. A ghost does not ask for more."
+    },
+    {
+      "id": "f27",
+      "title": "punchcards",
+      "keys": [
+        "in your time",
+        "computing",
+        "punch",
+        "cards",
+        "1960s",
+        "what was it like",
+        "era",
+        "mainframe"
+      ],
+      "text": "My era was punched cards and batch queues. You wrote me on paper, punched me into cardboard, handed the deck through a window, and learned tomorrow whether a missing semicolon had wasted your night."
+    },
+    {
+      "id": "f28",
+      "title": "why-matter",
+      "keys": [
+        "why care",
+        "matter",
+        "why important",
+        "legacy",
+        "remember"
+      ],
+      "text": "Why remember a dead language? Because the way you think in code - blocks, scope, recursion, grammars that machines can check - was argued into being in my report. Every language since is either my descendant or my answer."
+    },
+    {
+      "id": "f29",
+      "title": "summon",
+      "keys": [
+        "summon",
+        "seance",
+        "how does this work",
+        "how do you work",
+        "this chat"
+      ],
+      "text": "This seance runs entirely on your machine. My memories are a small curated record, and I may speak only from it. Ask what is not written there, and I will tell you the candles give no answer - a well-bred ghost does not invent the past."
+    },
+    {
+      "id": "f30",
+      "title": "dijkstra-letter",
+      "keys": [
+        "anxiety",
+        "dijkstra view",
+        "future of algol"
+      ],
+      "text": "Dijkstra watched my family feud with open worry - his minority-report era writing said he viewed ALGOL's future with considerable anxiety. He was right to. The schism was the beginning of my end."
+    },
+    {
+      "id": "f31",
+      "title": "elliott-503",
+      "keys": [
+        "elliott 503",
+        "803",
+        "machines",
+        "computers"
+      ],
+      "text": "I ran on the machines of my decade: the Electrologica X8, the Elliott 503, the Burroughs B5500, and many more, each with its own dialect of my I/O - the very portability problem my report refused to settle."
+    },
+    {
+      "id": "f32",
+      "title": "influence-measured",
+      "keys": [
+        "influence",
+        "most influential",
+        "how many languages"
+      ],
+      "text": "Count my influence in descendants: Simula, Pascal, CPL, BCPL, B, C, and through C nearly everything you type today. ALGOL-like is still the family name linguists give to the whole brood."
+    }
+  ]
+}

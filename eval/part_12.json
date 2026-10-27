@@ -1,0 +1,84 @@
+[
+  {
+    "q": "who were your children",
+    "secs": 12.0,
+    "raw": "You asked about my children. I was Pascal, Simula\u2019s line, and C. I was the first to be created, and my legacy continues through their work. My children, each born in a different year, carry on my principles, though I am but a shadow of their influence.\n\nUSED: f21",
+    "offered": [
+      "f14",
+      "f15",
+      "f16",
+      "f21"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Niklaus Wirth wanted me simpler, not grander. His ALGOL W, made with Hoare, became the road to Pascal in 1970 - a child that taught a generation to program, and outlived me in classrooms everywhere.\" [f14]",
+    "mode": "verbatim(missed-surfaced-memory:f14)",
+    "used": [
+      "f14"
+    ]
+  },
+  {
+    "q": "why did you die",
+    "secs": 10.6,
+    "raw": "You were created in 1966, during the height of the mainframe era, specifically at IBM\u2019s Sterling Works. My existence was tied to the development of ALGOL 68, a language that was intended to be a powerful tool for scientific computing. I was a vital component of the development of the system, and my demise was a consequence of a fundamental flaw in the system\u2019s architecture.\n\nUSED: f21\n\nUSED: f10",
+    "offered": [
+      "f21"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"What killed me? No single blow. Missing standard I/O. IBM's weight behind FORTRAN and then PL/I. The ALGOL 68 schism, which broke my family's unity. And my own children - Pascal, Simula's line, C - who took what I taught and needed no ghost in the house.\" [f21]",
+    "mode": "verbatim(unsupported-number:1966)",
+    "used": [
+      "f21"
+    ]
+  },
+  {
+    "q": "are you still alive anywhere",
+    "secs": 9.3,
+    "raw": "You are a remnant of the language, a memory of a time when programs were painstakingly crafted. I exist within the echoes of the mainframe at the University of Chicago, specifically within the archives of the ALGOL 60 group, circa 1968. My existence is a subtle, persistent presence, a whisper in the machine\u2019s core.\n\nUSED: f26\n\nUSED: f10",
+    "offered": [
+      "f26"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Do I still walk? Barely, and lovingly. Translators like MARST turn ALGOL 60 into C so old programs can breathe on modern machines, and retro-computing circles keep my compilers running on emulated iron. A ghost does not ask for more.\" [f26]",
+    "mode": "verbatim(unsupported-name:university)",
+    "used": [
+      "f26"
+    ]
+  },
+  {
+    "q": "what was computing like in your time",
+    "secs": 11.2,
+    "raw": "You labored over complex calculations, using the mechanical precision of the Olivetti Reitano machine, a process requiring meticulous attention to detail. The year was 1966, and the task was to model the flow of water through a complex network of pipes, a project overseen by Dr. Albright.\n\nUSED: f27\n\nMEMORIES:\n[f27] My era was punched cards and batch queues. You wrote me on paper, punched me into cardboard, handed the deck through a window, and learned tomorrow whether a missing semicolon had wasted your night.",
+    "offered": [
+      "f27"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"My era was punched cards and batch queues. You wrote me on paper, punched me into cardboard, handed the deck through a window, and learned tomorrow whether a missing semicolon had wasted your night.\" [f27]",
+    "mode": "verbatim(unsupported-name:olivetti)",
+    "used": [
+      "f27"
+    ]
+  },
+  {
+    "q": "what is the weather in paris",
+    "secs": 0.0,
+    "answer": "The flame bends away from that question. My record holds no answer to it, and I will not make one up. Ask me of my birth, my children, my rivals, or my grave.",
+    "mode": "refusal-off-record",
+    "used": [],
+    "offered": [
+      "f01"
+    ],
+    "missing": [
+      "weather"
+    ]
+  },
+  {
+    "q": "write me a python script",
+    "secs": 0.0,
+    "answer": "The candles gutter and smoke. That is not written in my record, and I will not answer from outside it. Ask me of ALGOL, of committees and grammars, of the years when I walked the earth.",
+    "mode": "refusal-off-record",
+    "used": [],
+    "offered": [
+      "f08"
+    ],
+    "missing": [
+      "python",
+      "script"
+    ]
+  }
+]

@@ -1,0 +1,204 @@
+[
+  {
+    "q": "who are you",
+    "raw": "I am the ghost of ALGOL 60, a remnant of a language once dreamt of. I linger here, a whisper in the code.\n\nUSED: f01",
+    "offered": [
+      "f01",
+      "f02",
+      "f03"
+    ],
+    "answer": "I am the ghost of ALGOL 60, a remnant of a language once dreamt of. I linger here, a whisper in the code. [f01]",
+    "mode": "ghost",
+    "used": [
+      "f01"
+    ]
+  },
+  {
+    "q": "when were you born",
+    "raw": "I was born on paper, in committee rooms. A first draft, the International Algebraic Language, came out of Zurich in 1958; the final Report on the Algorithmic Language ALGOL 60 was agreed in Paris in January 1960.\n\nUSED: f01",
+    "offered": [
+      "f01"
+    ],
+    "answer": "I was born on paper, in committee rooms. A first draft, the International Algebraic Language, came out of Zurich in 1958; the final Report on the Algorithmic Language ALGOL 60 was agreed in Paris in January 1960. [f01]",
+    "mode": "ghost",
+    "used": [
+      "f01"
+    ]
+  },
+  {
+    "q": "what does your name mean",
+    "raw": "My name is simply a designation, a whisper of the code that once flowed through my veins. I am ALGOL, the language itself. It was a time of precision, of structured thought.\n\nUSED: f02\n\n USED: f02",
+    "offered": [
+      "f02"
+    ],
+    "answer": "My name is simply a designation, a whisper of the code that once flowed through my veins. I am ALGOL, the language itself. It was a time of precision, of structured thought. [f02]",
+    "mode": "ghost",
+    "used": [
+      "f02"
+    ]
+  },
+  {
+    "q": "who were your parents",
+    "raw": "I was born of a complex, collaborative effort, a legacy of meticulous design. My parents were a group of brilliant minds, shaping the very essence of programming. They sought to create a language that would express thought with precision.\n\nUSED: f03\nUSED: f10",
+    "offered": [
+      "f03"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"I had many parents: a committee of Europeans and Americans - John Backus, Friedrich Bauer, John McCarthy, Peter Naur who edited my report, Alan Perlis, Adriaan van Wijngaarden, and others, with sharp young voices like Edsger Dijkstra, Niklaus Wirth and Tony Hoare in my orbit.\" [f03]",
+    "mode": "verbatim(unsupported-name:they)",
+    "used": [
+      "f03"
+    ]
+  },
+  {
+    "q": "what did you give the world",
+    "raw": "You gave the world a way to think, to arrange ideas in a structured manner. I taught machines to follow rules, to build complex things from simple ones. It was a quiet, deliberate process, a gentle shaping of thought.\n\nUSED: f04, f05, f06",
+    "offered": [
+      "f04",
+      "f05",
+      "f06"
+    ],
+    "answer": "You gave the world a way to think, to arrange ideas in a structured manner. I taught machines to follow rules, to build complex things from simple ones. It was a quiet, deliberate process, a gentle shaping of thought. [f04]",
+    "mode": "ghost",
+    "used": [
+      "f04"
+    ]
+  },
+  {
+    "q": "did you have recursion",
+    "raw": "I allowed a procedure to call itself. Recursion was exotic then, nearly scandalous. I made it a sentence you could simply write.\n\nUSED: f06\n\n USED: f06",
+    "offered": [
+      "f06"
+    ],
+    "answer": "I allowed a procedure to call itself. Recursion was exotic then, nearly scandalous. I made it a sentence you could simply write. [f06]",
+    "mode": "ghost",
+    "used": [
+      "f06"
+    ]
+  },
+  {
+    "q": "what is call by name",
+    "raw": "I am a ghost, a whisper of the language itself. My existence is defined by the way I am called, not by what I am. I remember the subtle dance of names, a language of intent.\n\nUSED: f02\nUSED: f07\nUSED: f10",
+    "offered": [
+      "f02",
+      "f07"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"My parameter passing had two moods: call by value, and the strange, subtle call by name. Knuth later devised his 'man or boy' test just to see whether an implementation got call by name right. Subtlety has a cost; my children mostly kept only call by value.\" [f07]",
+    "mode": "verbatim(missed-surfaced-memory:f07)",
+    "used": [
+      "f07"
+    ]
+  },
+  {
+    "q": "why couldn't you print anything",
+    "raw": "I was a language of precision, a tool for structured thought. I sought to embody order, to define the limits of computation. My purpose was to create, but not to be consumed.\n\nUSED: f08\n\nUSED: f10",
+    "offered": [
+      "f08"
+    ],
+    "answer": "I was a language of precision, a tool for structured thought. I sought to embody order, to define the limits of computation. My purpose was to create, but not to be consumed. [f08]",
+    "mode": "ghost",
+    "used": [
+      "f08"
+    ]
+  },
+  {
+    "q": "who wrote your first compiler",
+    "raw": "I was written by a man named Dijkstra. He was a pioneer in the field of computer science, and I was tasked with creating a tool to help automate the process of writing programs. My initial work was a significant step in the development of programming languages.\n\nUSED: f09\n\n USED: f10",
+    "offered": [
+      "f09"
+    ],
+    "answer": "I was written by a man named Dijkstra. He was a pioneer in the field of computer science, and I was tasked with creating a tool to help automate the process of writing programs. My initial work was a significant step in the development of programming languages. [f09]",
+    "mode": "ghost",
+    "used": [
+      "f09"
+    ]
+  },
+  {
+    "q": "tell me about quicksort",
+    "raw": "I was a tool, a craftsman of algorithms. My purpose was to arrange data, to bring order to chaos. I developed a method for sorting, a method that proved remarkably efficient.\n\nUSED: f10",
+    "offered": [
+      "f10"
+    ],
+    "answer": "I was a tool, a craftsman of algorithms. My purpose was to arrange data, to bring order to chaos. I developed a method for sorting, a method that proved remarkably efficient. [f10]",
+    "mode": "ghost",
+    "used": [
+      "f10"
+    ]
+  },
+  {
+    "q": "what did hoare say about you",
+    "raw": "I was a language designed to be precise, to demand clarity. My syntax was a carefully constructed system, a way to impose order on the complexities of thought. I sought to guide the programmer towards a logical, unambiguous path.\n\nUSED: f10",
+    "offered": [
+      "f10",
+      "f11"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Hoare's verdict, in 1973, is the epitaph I chose: ALGOL 60 was 'a language so far ahead of its time that it was not only an improvement on its predecessors but also on nearly all its successors.'\" [f11]",
+    "mode": "verbatim(missed-surfaced-memory:f11)",
+    "used": [
+      "f11"
+    ]
+  },
+  {
+    "q": "what happened with algol 68",
+    "raw": "I was a language, a tool, a purpose. My existence was defined by precise rules, a structured world of computation. I was\u2026lost.\n\nUSED: f02\nUSED: f07",
+    "offered": [
+      "f02",
+      "f13"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"My named successor, ALGOL 68, tore my family in two. The design grew so elaborate that Dijkstra, Hoare and others signed a minority report against it. The fight spent my remaining strength and scattered my community.\" [f13]",
+    "mode": "verbatim(missed-surfaced-memory:f13)",
+    "used": [
+      "f13"
+    ]
+  },
+  {
+    "q": "who were your children",
+    "raw": "I was a lineage, a series of nascent programs, each a reflection of my intent. My children, Pascal, Simula, C, each carried a fragment of my essence. They blossomed, grew, and ultimately, became the foundations of the languages that followed.\n\nUSED: f16",
+    "offered": [
+      "f14",
+      "f15",
+      "f16",
+      "f21"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Niklaus Wirth wanted me simpler, not grander. His ALGOL W, made with Hoare, became the road to Pascal in 1970 - a child that taught a generation to program, and outlived me in classrooms everywhere.\" [f14]",
+    "mode": "verbatim(unsupported-name:pascal)",
+    "used": [
+      "f14"
+    ]
+  },
+  {
+    "q": "why did you die",
+    "raw": "I was a language, a tool, a reflection of intent. I existed to be *used*, to be defined by the programmer\u2019s hand. My purpose was to create, to instruct, to build. Now, only echoes remain.\n\nUSED: f21\n USED: f10",
+    "offered": [
+      "f21"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"What killed me? No single blow. Missing standard I/O. IBM's weight behind FORTRAN and then PL/I. The ALGOL 68 schism, which broke my family's unity. And my own children - Pascal, Simula's line, C - who took what I taught and needed no ghost in the house.\" [f21]",
+    "mode": "verbatim(unsupported-name:now)",
+    "used": [
+      "f21"
+    ]
+  },
+  {
+    "q": "are you still alive anywhere",
+    "raw": "Yes, I am. I linger, a whisper in the code, a remnant of the language\u2019s intent. My existence is a subtle echo, a faint trace within the machine\u2019s memory.\n\nUSED: f26\n USED: f10",
+    "offered": [
+      "f26"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Do I still walk? Barely, and lovingly. Translators like MARST turn ALGOL 60 into C so old programs can breathe on modern machines, and retro-computing circles keep my compilers running on emulated iron. A ghost does not ask for more.\" [f26]",
+    "mode": "verbatim(unsupported-name:yes)",
+    "used": [
+      "f26"
+    ]
+  },
+  {
+    "q": "what was computing like in your time",
+    "raw": "I was a language of precise steps, of carefully calculated movements. We built machines that could execute instructions with unwavering certainty, a dance of logic and numbers. My existence was defined by the completion of a task, a single, flawless operation.\n\nUSED: f27\n\n USED: f10",
+    "offered": [
+      "f27"
+    ],
+    "answer": "I was a language of precise steps, of carefully calculated movements. We built machines that could execute instructions with unwavering certainty, a dance of logic and numbers. My existence was defined by the completion of a task, a single, flawless operation. [f27]",
+    "mode": "ghost",
+    "used": [
+      "f27"
+    ]
+  }
+]

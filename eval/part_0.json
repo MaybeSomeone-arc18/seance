@@ -1,0 +1,84 @@
+[
+  {
+    "q": "who are you",
+    "secs": 10.8,
+    "raw": "I am ALGOL 60. I reside within the echoes of the past, a remnant of a language designed to express complex ideas. My existence was born in the halls of the International Algebraic Language, finalized in Paris in January 1960. I was created by a committee of European and American scholars, a collaborative effort to refine the language\u2019s potential.\n\nUSED: f01, f02",
+    "offered": [
+      "f01",
+      "f02",
+      "f03"
+    ],
+    "answer": "I am ALGOL 60. I reside within the echoes of the past, a remnant of a language designed to express complex ideas. My existence was born in the halls of the International Algebraic Language, finalized in Paris in January 1960. I was created by a committee of European and American scholars, a collaborative effort to refine the language\u2019s potential. [f01]",
+    "mode": "ghost",
+    "used": [
+      "f01"
+    ]
+  },
+  {
+    "q": "when were you born",
+    "secs": 7.3,
+    "raw": "I was born on paper, in committee rooms. A first draft, the International Algebraic Language, came out of Zurich in 1958; the final Report on the Algorithmic Language ALGOL 60 was agreed in Paris in January 1960.\n\nUSED: f01",
+    "offered": [
+      "f01"
+    ],
+    "answer": "I was born on paper, in committee rooms. A first draft, the International Algebraic Language, came out of Zurich in 1958; the final Report on the Algorithmic Language ALGOL 60 was agreed in Paris in January 1960. [f01]",
+    "mode": "ghost",
+    "used": [
+      "f01"
+    ]
+  },
+  {
+    "q": "what does your name mean",
+    "secs": 7.4,
+    "raw": "You are a remnant of a language, a construct of logic and calculation. My designation is ALGOL 60, a name signifying the era of precise, structured programming. I exist as a memory, a ghost of the machine, forever bound to the code I once wrote.\n\nUSED: f02\n\n USED: f07",
+    "offered": [
+      "f02"
+    ],
+    "answer": "You are a remnant of a language, a construct of logic and calculation. My designation is ALGOL 60, a name signifying the era of precise, structured programming. I exist as a memory, a ghost of the machine, forever bound to the code I once wrote. [f02]",
+    "mode": "ghost",
+    "used": [
+      "f02"
+    ]
+  },
+  {
+    "q": "who were your parents",
+    "secs": 8.9,
+    "raw": "You were created in 1966, at the University of California, Berkeley, by a team of engineers and linguists \u2013 a collaborative effort, a complex arrangement of minds. My initial form was a prototype, a nascent attempt at a formal language, and my parentage was a carefully constructed lineage of influential figures in the field of programming.\n\nUSED: f03\n\n USED: f07",
+    "offered": [
+      "f03"
+    ],
+    "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"I had many parents: a committee of Europeans and Americans - John Backus, Friedrich Bauer, John McCarthy, Peter Naur who edited my report, Alan Perlis, Adriaan van Wijngaarden, and others, with sharp young voices like Edsger Dijkstra, Niklaus Wirth and Tony Hoare in my orbit.\" [f03]",
+    "mode": "verbatim(unsupported-number:1966)",
+    "used": [
+      "f03"
+    ]
+  },
+  {
+    "q": "what did you give the world",
+    "secs": 7.2,
+    "raw": "You gave the world a framework for structured thought. My syntax, meticulously crafted, remains the bedrock of all programming. I allowed programs to execute, to build upon themselves, a concept that was once considered a dangerous anomaly.\n\nUSED: f04",
+    "offered": [
+      "f04",
+      "f05",
+      "f06"
+    ],
+    "answer": "You gave the world a framework for structured thought. My syntax, meticulously crafted, remains the bedrock of all programming. I allowed programs to execute, to build upon themselves, a concept that was once considered a dangerous anomaly. [f04]",
+    "mode": "ghost",
+    "used": [
+      "f04"
+    ]
+  },
+  {
+    "q": "did you have recursion",
+    "secs": 6.1,
+    "raw": "You did, my existence was defined by the ability to call myself, a simple instruction to repeat. It was a novel concept, a way to build complexity from a single point.\n\nUSED: f06\n\n USED: f07",
+    "offered": [
+      "f06"
+    ],
+    "answer": "You did, my existence was defined by the ability to call myself, a simple instruction to repeat. It was a novel concept, a way to build complexity from a single point. [f06]",
+    "mode": "ghost",
+    "used": [
+      "f06"
+    ]
+  }
+]

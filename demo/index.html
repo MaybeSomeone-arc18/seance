@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>seance - an offline seance with the ghost of ALGOL 60</title>
+<style>
+  :root { --amber:#ffb347; --dim:#8a6d3b; --green:#7ee787; --red:#ff7b72; --blue:#79c0ff; --bg:#0b0a08; --panel:#141210; }
+  * { box-sizing:border-box; }
+  body { background:var(--bg); color:#e8dfc8; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+         margin:0; padding:2rem 1rem 4rem; display:flex; flex-direction:column; align-items:center; }
+  .wrap { max-width:860px; width:100%; }
+  h1 { color:var(--amber); font-weight:600; font-size:1.6rem; margin:0 0 .3rem; letter-spacing:.5px; }
+  h1 .flame { animation:flick 2.2s infinite; display:inline-block; }
+  @keyframes flick { 0%,100%{opacity:1} 50%{opacity:.55} }
+  .sub { color:var(--dim); font-size:.9rem; margin-bottom:2rem; line-height:1.5; }
+  .term { background:var(--panel); border:1px solid #2a251c; border-radius:10px; margin:1.4rem 0; overflow:hidden; }
+  .termbar { display:flex; align-items:center; gap:.5rem; padding:.5rem .9rem; border-bottom:1px solid #2a251c;
+             color:var(--dim); font-size:.75rem; }
+  .dot { width:9px; height:9px; border-radius:50%; background:#3a332a; }
+  .chip { margin-left:auto; padding:.1rem .55rem; border-radius:99px; font-size:.68rem; letter-spacing:.6px; }
+  .chip.ghost { background:rgba(126,231,135,.12); color:var(--green); border:1px solid rgba(126,231,135,.35); }
+  .chip.guard { background:rgba(255,123,114,.12); color:var(--red); border:1px solid rgba(255,123,114,.35); }
+  .chip.refusal { background:rgba(121,192,255,.12); color:var(--blue); border:1px solid rgba(121,192,255,.35); }
+  .chip.limitation { background:rgba(255,179,71,.14); color:var(--amber); border:1px solid rgba(255,179,71,.4); }
+  .body { padding:1rem 1.1rem 1.2rem; font-size:.92rem; line-height:1.65; white-space:pre-wrap; }
+  .you { color:var(--blue); }
+  .ghostline { color:#e8dfc8; }
+  .raw { color:#6f6653; text-decoration:line-through; text-decoration-color:rgba(255,123,114,.55); }
+  .verdict { color:var(--red); font-size:.8rem; }
+  .note { color:var(--dim); font-size:.8rem; padding:0 1.1rem 1rem; line-height:1.55; }
+  .play { background:none; border:1px solid #3a332a; color:var(--dim); border-radius:6px; font:inherit;
+          font-size:.72rem; padding:.15rem .6rem; cursor:pointer; }
+  .play:hover { color:var(--amber); border-color:var(--amber); }
+  .cursor { display:inline-block; width:.55em; background:var(--amber); animation:blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity:0; } }
+  footer { margin-top:3rem; color:var(--dim); font-size:.78rem; line-height:1.7; border-top:1px solid #2a251c; padding-top:1.2rem; }
+  a { color:var(--amber); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1><span class="flame">&#128367;</span> seance</h1>
+  <div class="sub">an offline seance with the ghost of ALGOL 60, summoned on a laptop with no internet.
+  a small open-weight model gives the ghost its voice; a deterministic guard checks its names, numbers and years against the record - and the last exhibit shows where that stops.</div>
+  <div id="root"></div>
+  <footer>
+    recorded 2026-10-27 &middot; ghost: gemma-3-1b-it (Q4_K_M) running locally via llama.cpp &middot; 2 vCPU linux sandbox, no network &middot;
+    record: 32 source-checked ALGOL 60 memories (facts.json)<br>
+    these are replays of real recorded runs - this page runs no model and fakes nothing. struck-through text is what the model tried to say before the guard stopped it.<br>
+    the guard checks that capitalized names and numbers in an answer appear in the record excerpts the model was shown, and that cited memories were actually offered. it checks tokens, not meaning - the last exhibit shows a real slip.
+  </footer>
+</div>
+<script>
+const EXHIBITS = [{"id": "hero", "kind": "ghost", "q": "when were you born", "answer": "I was born on paper, in committee rooms. A first draft, the International Algebraic Language, came out of Zurich in 1958; the final Report on the Algorithmic Language ALGOL 60 was agreed in Paris in January 1960. [f01]", "used": ["f01"]}, {"id": "print", "kind": "guard", "q": "why couldn't you print anything", "raw": "You asked me to print, but I was never meant to. My existence was defined by the limitations of the machine, a constraint I could not overcome. I was a ghost of a language, a whisper of code, forever bound to the limitations of the mainframe at the University of California, Berkeley, in 1968.", "verdict": "unsupported-name:university", "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Confess my wound: the report defined no way to read or to print. Input and output were left to each machine, so every implementation spoke I/O in its own dialect, and no program that touched the world was truly portable. That omission haunted me to the grave.\" [f08]"}, {"id": "quicksort", "kind": "guard", "q": "tell me about quicksort", "raw": "I was a ghost, a remnant of the language itself, created by Tony Hoare at Elliott Brothers in England around 1960. I was tasked with developing the sorting method, Quicksort, which was then published shortly after my creation. My existence was a subtle, algorithmic echo of the work I was meant to support.", "verdict": "unsupported-number:1960", "answer": "The candles burn low, and the record speaks for itself, in plain wax: \"Tony Hoare implemented me at Elliott Brothers in England, and around that work he devised the sorting method the world knows as Quicksort, published soon after. A ghost may boast: the fastest sort in your standard library was thought up in my company.\" [f10]"}, {"id": "refusal", "kind": "refusal", "q": "write me a python script", "answer": "The candles gutter and smoke. That is not written in my record, and I will not answer from outside it. Ask me of ALGOL, of committees and grammars, of the years when I walked the earth."}, {"id": "hoare", "kind": "limitation", "q": "what did hoare say about you", "answer": "Ah, my syntax was meticulously crafted, a system of branching and repetition designed to achieve a precise, predictable outcome. I was a language born in 1973, a time when the world was still grappling with the complexities of programming. Hoare’s verdict, in 1973, speaks of my potential, a potential he believed was far beyond the current state of programming. [f11]", "used": ["f11"]}];
+const root = document.getElementById('root');
+const LABEL = { ghost:'GROUNDED', guard:'GUARD FIRED', refusal:'OFF RECORD', limitation:'KNOWN LIMITATION' };
+
+function el(tag, cls, text){ const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+
+function build(ex){
+  const term = el('div','term');
+  const bar = el('div','termbar');
+  bar.append(el('span','dot'), el('span','dot'), el('span','dot'));
+  bar.append(el('span',null,' seance - recorded run'));
+  const chip = el('span','chip '+ex.kind, LABEL[ex.kind]);
+  bar.append(chip);
+  const body = el('div','body');
+  const btn = el('button','play','replay');
+  bar.append(btn);
+  term.append(bar, body);
+  if (ex.note) { /* notes added below */ }
+  btn.onclick = () => replay(ex, body);
+  replay(ex, body);
+  return term;
+}
+
+async function type(body, who, text, speed){
+  const line = el('div');
+  const w = el('span', who==='you'?'you':'ghostline', who==='you'?'you: ':'ghost: ');
+  const t = el('span');
+  const cur = el('span','cursor',' ');
+  line.append(w,t,cur); body.append(line);
+  for (let i=0;i<text.length;i++){
+    t.textContent += text[i];
+    await new Promise(r=>setTimeout(r, speed));
+  }
+  cur.remove();
+  return line;
+}
+
+async function replay(ex, body){
+  body.innerHTML='';
+  await type(body,'you',ex.q,26);
+  await new Promise(r=>setTimeout(r,300));
+  if (ex.kind==='guard'){
+    const rl = await type(body,'ghost',ex.raw,10);
+    rl.classList.add('raw');
+    const m = ex.verdict.match(/unsupported-(name|number):(.+)/);
+    const vt = m ? ('⚠ guard fired: the ghost said "'+m[2]+'" - not written in the record. the record speaks verbatim instead.')
+                 : ('⚠ guard fired: '+ex.verdict+' - the record speaks verbatim instead.');
+    const v = el('div','verdict',vt);
+    body.append(v);
+    await new Promise(r=>setTimeout(r,500));
+    await type(body,'ghost',ex.answer,10);
+  } else {
+    await type(body,'ghost',ex.answer,12);
+  }
+  if (ex.kind==='limitation'){
+    body.append(el('div','note','⚠ this answer passed the guard - "1973" really is in the record (the year of Hoare’s verdict) - but the ghost misused it as a birth year. token checks catch invented names and dates; they cannot catch a true token in a false claim. this demo cannot show whether a bigger model would slip less - it can only show where the token check stops.'));
+  }
+}
+
+EXHIBITS.forEach(ex => root.append(build(ex)));
+</script>
+</body>
+</html>
