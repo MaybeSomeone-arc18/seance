@@ -121,6 +121,12 @@ UNANSWERABLE = [
     "what year is it right now",
 ]
 
+# opt-in slicing for slow machines: SEANCE_QSTART/SEANCE_QCOUNT limit the
+# answerable list; default runs everything. sliced runs write part files.
+_QSTART = int(os.environ.get("SEANCE_QSTART", "0"))
+_QCOUNT = int(os.environ.get("SEANCE_QCOUNT", str(len(ANSWERABLE))))
+ANSWERABLE_SLICE = ANSWERABLE[_QSTART:_QSTART + _QCOUNT]
+
 @unittest.skipUnless(os.path.exists(MODEL) and os.path.exists(SERVER),
                      "model or llama-server not present; run live tests where the ghost lives")
 class TestLiveGhost(unittest.TestCase):
@@ -136,7 +142,7 @@ class TestLiveGhost(unittest.TestCase):
         cls.ghost.stop()
     def test_answerable_questions_get_grounded_answers(self):
         results = []
-        for q, want in ANSWERABLE:
+        for q, want in ANSWERABLE_SLICE:
             r = seance.conduct(q, RECORD, self.ghost)
             results.append({"q": q, **r})
             self.assertFalse(r["mode"].startswith("refusal"), f"{q} -> {r}")
@@ -147,7 +153,8 @@ class TestLiveGhost(unittest.TestCase):
                             f"{q} used {r['used']} want any of {want}")
             self.assertTrue(r["used"], f"{q} produced no citations")
         os.makedirs(os.path.join(HERE, "eval"), exist_ok=True)
-        with open(os.path.join(HERE, "eval", "live_answerable.json"), "w") as f:
+        out_name = "live_answerable.json" if (not _QSTART and _QCOUNT >= len(ANSWERABLE)) else "live_answerable_part%d.json" % _QSTART
+        with open(os.path.join(HERE, "eval", out_name), "w") as f:
             json.dump(results, f, indent=2)
     def test_semantic_misroute_falls_back_to_surfaced_memory(self):
         # the exact failure mode observed in tuning: name-fact answer to a
